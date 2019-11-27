@@ -22,6 +22,7 @@ For example: If you want to search for the movie "Doctor Strange", the user can 
     DOCTOR STRANGE   
     doctor strange
     doCTor sTrAngE
+
 and so on in any combination of upper case and lower case letters of the words "Doctor Strange" and also with any combination of leading and trailing spaces can be given as input.
 I have achieved this by converting whatever input is given by user to CAPITALS. 
 
@@ -42,22 +43,23 @@ IMPORTANT: The "Name.txt" file's encoding should not be changed to Unicode. It's
 ## Current Data:
 # Will be updated frequently.
 List of the movies that we can search using the given code are:
-DOCTOR STRANGE	
-THE AVENGERS:ENDGAME
-TITANIC
-AVATAR
-THE WOLF OF THE WALL STREET
-AVENGERS:INFINITY WAR
-ANNABELLE:CREATION
-NEWTON
-INCEPTION
-BLACK PANTHER
-CAPTAIN AMERICA:CIVIL WAR
-GUARDIANS OF THE GALAXY
-GUARDIANS OF THE GALAXY:VOLUME 2
-IRON MAN
-IRON MAN 2
-IRON MAN 3
-THE AVENGERS
-SPIDERMAN:HOMECOMING
-AVENGERS:AGE OF ULTRON
+
+    DOCTOR STRANGE	
+    THE AVENGERS:ENDGAME
+    TITANIC
+    AVATAR
+    THE WOLF OF THE WALL STREET
+    AVENGERS:INFINITY WAR
+    ANNABELLE:CREATION
+    NEWTON
+    INCEPTION
+    BLACK PANTHER
+    CAPTAIN AMERICA:CIVIL WAR
+    GUARDIANS OF THE GALAXY
+    GUARDIANS OF THE GALAXY:VOLUME 2
+    IRON MAN
+    IRON MAN 2
+    IRON MAN 3
+    THE AVENGERS
+    SPIDERMAN:HOMECOMING
+    AVENGERS:AGE OF ULTRON
