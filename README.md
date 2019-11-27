@@ -41,7 +41,7 @@ IMPORTANT: For the code to execute properly, the file which contains the informa
 IMPORTANT: The "Name.txt" file's encoding should not be changed to Unicode. It's encoding is currently ANSI and should remain ANSI or the program will not execute successfully.
 
 ## Current Data:
-# Will be updated frequently.
+### Will be updated frequently.
 List of the movies that we can search using the given code are:
 
     DOCTOR STRANGE	
