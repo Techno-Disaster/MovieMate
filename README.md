@@ -7,7 +7,7 @@
 
 </div>
 
-This is a simple file-handling project developed in C as my first-year project. Its kindoff like a clone of PirateBay exceptthe GUI.    
+This is a simple file-handling project developed in C as my first-year project. Its kindoff like a clone of PirateBay except the GUI.    
 It takes the input of the name of the movie from the user and displays the information stored about that movie in the file "Name.txt". The information that is shown is the cast, budget, awards, plot, etc and also a link is provided for streaming the movie online. The total list of movies is given at the end of the this file. Below are some intricate details about the program which may help you in understanding and executing the program successfully. 
 
 ## How to Use:
