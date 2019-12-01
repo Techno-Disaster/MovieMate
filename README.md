@@ -63,3 +63,13 @@ List of the movies that we can search using the given code are:
     THE AVENGERS
     SPIDERMAN:HOMECOMING
     AVENGERS:AGE OF ULTRON
+    YES BOSS
+    DEVDAS
+    DIL CHAHTA HAI
+    ZINDAGI NA MILEGI DOBARA
+    ANDHADHUN
+    BHAG MILKA BHAG
+    SWADESH
+    KUCH KUCH HOTA HAI
+    JAB TAK HAI JAAN
+    
