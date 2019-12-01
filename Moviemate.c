@@ -1,18 +1,18 @@
-
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
+
 int get_char();
 int movie_search(char a[100]);
 void display(char d[100]);
 void remove_newline(char w[100]);
 void remove_white_space(char u[100]);
-char c;     //Global variable declared
-FILE *fptr; //File pointer defined in stdio.h
+char c, cha; //Global variable declared
+FILE *fptr;  //File pointer defined in stdio.h
 int main()
 {
     int i;
-    char cha, ch, search[100];
+    char ch, search[100];
     //Ensure that "Name.txt" file is in the same folder as that of this source code
     printf("Have you ensured that the source code(Moviemate.c) and the file \"Name.txt\" are in the same folder(Y/N):");
     //testing line so that errors do not occur
@@ -26,7 +26,7 @@ int main()
             in read only mode*/
             printf("Enter the name of the movie which you want to search:");
             /*difference between fgets and gets is fgets gets in the STREAM opened by fopen.
-            STREAMS are how a program comuncates with the target environment*/
+            STREAMS are how a program comunicates with the target environment i.e in this case the Name.txt file*/
             fgets(search, 100, stdin); //Movie inputted by user is stored in search
             for (i = 0; search[i] != '\0'; i++)
             {
@@ -38,6 +38,10 @@ int main()
             {
                 movie_search(search); //Function call to user-defined function
             }
+            else if (search[0] = '\0')
+            {
+                printf("Please enter name of movie"); //so that user cant input a blank name.
+            }
             else
             {
                 printf("No such movie found.\n");
@@ -46,7 +50,11 @@ int main()
             scanf("%c", &cha);
             getchar();
         } while (cha == 'Y' || cha == 'y');
-        printf("Thank you.");
+        if (cha != 'Y' || cha != 'y')
+        {
+            printf("Thank you.");
+        }
+
         fclose(fptr); // Close file to save file's data
     }
     else
@@ -70,11 +78,12 @@ void remove_newline(char w[100]) //Removes '\n'(new line) from the string
 void remove_white_space(char u[100]) //Leading and trailing white spaces are removed from the inputted string
 {
     int i, j;
-    for (i = strlen(u) - 1; u[i] == 32; i--)
+    for (i = strlen(u) - 1; u[i] == 32; i--) /*this is a forloop from the end of the string and if it encounters a u[i] 
+    with ascii value 32 which is a space it replaces it with a null character*/
     {
         u[i] = '\0'; //Trailing spaces are replaced by a null character
     }
-    for (i = 0;; i++)
+    for (i = 0;; i++) // this forloop is for removing the white spaces before the movie name.
     {
         if ((int)u[i] != 32)
         {
@@ -146,6 +155,8 @@ void display(char d[100]) //In this function, the information stored about the m
     get_char();
     while (strstr(fgets(b, 109, fptr), d) == NULL) /*Movie's name is searched again in the file and until found, the content
     of the file is printed*/
+    //here 109 is the maximum number of characters to be copied into str
+    //we use the strstr function to check the value of b in the Name.txt file via fptr
     {
         fputs(b, stdout);
     }
