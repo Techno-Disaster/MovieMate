@@ -7,7 +7,7 @@
 
 </div>
 
-This is a simple file-handling project developed in C as my first-year project. Its kindoff like a clone of PirateBay exceptthe GUI.    
+This is a simple file-handling project developed in C as my first-year project. Its kindoff like a clone of PirateBay except the GUI.    
 It takes the input of the name of the movie from the user and displays the information stored about that movie in the file "Name.txt". The information that is shown is the cast, budget, awards, plot, etc and also a link is provided for streaming the movie online. The total list of movies is given at the end of the this file. Below are some intricate details about the program which may help you in understanding and executing the program successfully. 
 
 ## How to Use:
@@ -41,7 +41,7 @@ IMPORTANT: For the code to execute properly, the file which contains the informa
 IMPORTANT: The "Name.txt" file's encoding should not be changed to Unicode. It's encoding is currently ANSI and should remain ANSI or the program will not execute successfully.
 
 ## Current Data:
-# Will be updated frequently.
+### Will be updated frequently.
 List of the movies that we can search using the given code are:
 
     DOCTOR STRANGE	
